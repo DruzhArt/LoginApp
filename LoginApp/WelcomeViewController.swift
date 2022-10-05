@@ -8,5 +8,10 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
+    var user = ""
+        @IBAction func LogOutDidTapped() {
+            
+        }
 }
+
