@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     private let user = "User"
-    private let password = "password"
+    private let password = "Password"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
@@ -35,6 +35,7 @@ class LoginViewController: UIViewController {
                 )
             return
         }
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
     
@@ -44,8 +45,12 @@ class LoginViewController: UIViewController {
         : showAlert(title: "Oops!", message: "Your password is \(password) 😉")
     }
     
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        userNameTextField.text = ""
+        passwordTextField.text = ""
+    }
     
-    func showAlert(title: String, message: String, textField: UITextField? = nil) {
+    private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             textField?.text = ""
