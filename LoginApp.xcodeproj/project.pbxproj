@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B6F477128F3104F006A9414 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F477028F3104F006A9414 /* BioViewController.swift */; };
+		8B6F477328F312CD006A9414 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F477228F312CD006A9414 /* User.swift */; };
 		8BBD77A528EB4349003E8DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD77A428EB4349003E8DB9 /* AppDelegate.swift */; };
 		8BBD77A728EB4349003E8DB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD77A628EB4349003E8DB9 /* SceneDelegate.swift */; };
 		8BBD77A928EB4349003E8DB9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBD77A828EB4349003E8DB9 /* LoginViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B6F477028F3104F006A9414 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BioViewController.swift; path = LoginApp/ViewControllers/BioViewController.swift; sourceTree = SOURCE_ROOT; };
+		8B6F477228F312CD006A9414 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8BBD77A128EB4349003E8DB9 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBD77A428EB4349003E8DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BBD77A628EB4349003E8DB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,10 +88,11 @@
 		8BBD77BB28EE1860003E8DB9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8BBD77C028F3064E003E8DB9 /* UserViewController.swift */,
 				8BBD77A828EB4349003E8DB9 /* LoginViewController.swift */,
 				8BBD77BE28F2F004003E8DB9 /* TabBarViewController.swift */,
 				8BBD77B828EB48EA003E8DB9 /* WelcomeViewController.swift */,
+				8BBD77C028F3064E003E8DB9 /* UserViewController.swift */,
+				8B6F477028F3104F006A9414 /* BioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 		8BBD77BD28EE18B6003E8DB9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8B6F477228F312CD006A9414 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,9 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6F477128F3104F006A9414 /* BioViewController.swift in Sources */,
 				8BBD77A928EB4349003E8DB9 /* LoginViewController.swift in Sources */,
 				8BBD77C128F3064E003E8DB9 /* UserViewController.swift in Sources */,
 				8BBD77B928EB48EA003E8DB9 /* WelcomeViewController.swift in Sources */,
+				8B6F477328F312CD006A9414 /* User.swift in Sources */,
 				8BBD77A528EB4349003E8DB9 /* AppDelegate.swift in Sources */,
 				8BBD77BF28F2F004003E8DB9 /* TabBarViewController.swift in Sources */,
 				8BBD77A728EB4349003E8DB9 /* SceneDelegate.swift in Sources */,

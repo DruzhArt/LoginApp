@@ -249,15 +249,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="companyLabel" destination="1tY-CF-kBa" id="W2k-TH-4Ux"/>
+                        <outlet property="jobTitleLabel" destination="IP2-j5-2Qj" id="cWo-zw-eHz"/>
+                        <outlet property="nameLabel" destination="Oaz-H0-GVL" id="IeX-Ue-gXm"/>
+                        <outlet property="surnameLabel" destination="Osl-ey-oaH" id="kv2-9W-XoZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmO-nC-paD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1749" y="737"/>
         </scene>
-        <!--View Controller-->
+        <!--Bio View Controller-->
         <scene sceneID="IhF-J1-hUe">
             <objects>
-                <viewController id="Z7J-4N-Sai" sceneMemberID="viewController">
+                <viewController id="Z7J-4N-Sai" customClass="BioViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6qT-dF-O9h">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,6 +282,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JOO-8q-Ik2" customClass="TabBarViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xbA-re-gTr">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
