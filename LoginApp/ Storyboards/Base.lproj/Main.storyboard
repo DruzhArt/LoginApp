@@ -253,6 +253,7 @@
                         <outlet property="companyLabel" destination="1tY-CF-kBa" id="W2k-TH-4Ux"/>
                         <outlet property="jobTitleLabel" destination="IP2-j5-2Qj" id="cWo-zw-eHz"/>
                         <outlet property="nameLabel" destination="Oaz-H0-GVL" id="IeX-Ue-gXm"/>
+                        <outlet property="photoImage" destination="vs2-o4-z3Y" id="9a4-PF-rtu"/>
                         <outlet property="surnameLabel" destination="Osl-ey-oaH" id="kv2-9W-XoZ"/>
                     </connections>
                 </viewController>
@@ -276,10 +277,10 @@
             </objects>
             <point key="canvasLocation" x="2498" y="737"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="eqJ-jH-UJv">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JOO-8q-Ik2" customClass="TabBarViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="JOO-8q-Ik2" customClass="TabBarController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xbA-re-gTr">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
