@@ -27,5 +27,9 @@ class UserViewController: UIViewController {
         view.addVerticalGradientLayer()
         photoImage.image = UIImage(named: user.person.photo)
         title = user.person.fullname
+        nameLabel.text = user.person.name
+        surnameLabel.text = user.person.surname
+        companyLabel.text = user.person.job.title
+        jobTitleLabel.text = user.person.job.jobTitle
     }
 }
