@@ -18,6 +18,17 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = user
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        
+        viewControllers.forEach { viewController in
+            if let userVC  = viewController as? UserViewController {
+                userVC.view.backgroundColor = .systemBlue
+            } else if let welcomeVS = viewController as? WelcomeViewController {
+                welcomeVS.view.backgroundColor = .systemRed
+            }
+        }
+         
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
